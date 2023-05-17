@@ -12,6 +12,12 @@
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
   </head>
+  <script>
+    function qrcode_embedding(){
+      var paragraph = document.getElementById("text_res");
+      paragraph.textContent = "Sorry, it's developing.";
+    }
+  </script>
 <body>
  <!--  Main banner section -->
  <section class="w3l-main-banner" id="home">
@@ -61,7 +67,8 @@
             QR code Text:<input></input>
             Watermark:<input></input>
             Embedding: <button onclick="qrcode_embedding()" class="button" style="cursor:pointer"></button>
-	</div>
+            <h4 id="text_res"></h4>
+          </div>
 </section>
 <script src="assets/js/embedding.js"></script>
 </body>
